@@ -23,4 +23,7 @@ button.addEventListener('click', function(){
     cityname.innerHTML = citynameValue;
     desc.innerHTML = descValue;
   })
-})
+  .catch(error => {
+    desc.innerHTML = `Error: ${error.message}`;
+});
+});
