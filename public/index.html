@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script defer src="/Simple-weather-app/src/script.js"></script>
+    <title>Current Weather App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+        </div>
+        <div class="content">
+            <div class="general-information">
+                <div class="status" id="cityname">How's the weather in...</div>
+                <div class="location" id="desc">A few clicks away to find out!</div>
+            </div>
+            <div class="detail-section">
+                <div class="detail">
+                    <div class="title">Wind</div>
+                    <div class="value" data-wind>💨</div>
+                </div>
+                <div class="detail">
+                    <div class="title">Temperature</div>
+                    <div class="value" data-temperature>🌞</div>
+                </div>
+                <div class="detail">
+                    <div class="title">Pressure</div>
+                    <div class="value" data-Pressure>⏲</div>
+                </div>
+            </div>
+        </div>
+        <div class="city-search-container">
+            <input type="text" class="city-search" placeholder="Enter Location">
+            <input type="submit" value="submit" class="submit" >
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
