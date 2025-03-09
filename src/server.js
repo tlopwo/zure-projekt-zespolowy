@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/public/index.html');
 });
 
-app.listen(8181, () => {
+app.listen(8080, () => {
     console.log('SERVER ON')
-    console.log('App hosted - http://localhost:8181/')
+    console.log('App hosted - http://localhost:8080/')
 })
