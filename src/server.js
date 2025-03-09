@@ -7,13 +7,8 @@ const express = require('express')
 const app = express()
 
 app.use(express.json())
-app.use(express.static('public', {
-    setHeaders: (res, path) => {
-        if (path.endsWith('.js')) {
-            res.setHeader('Content-Type', 'application/javascript');
-        }
-    }
-}));
+app.use(express.static(path.join(__dirname, "js")));
+
 
 app.post('/weather', (req, res) => {
     const url = 'https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid=/${APP_API_KEY}'
