@@ -4,9 +4,10 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "build": "npm run build:frontend",
     "start": "node api/server.js",      
-    "devStart": "nodemon api/server.js",
-    "build": "npm run build:frontend"
+    "devStart": "nodemon api/server.js"
+    
   },
   "author": "",
   "license": "ISC",
