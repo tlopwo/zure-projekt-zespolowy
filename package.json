@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "scripts": {
-    "build": "npm run build:frontend",
-    "start": "node api/server.js",      
-    "devStart": "nodemon api/server.js"
-    
+"scripts": {
+    "start": "node src/server.js",          
+    "devStart": "nodemon src/server.js", 
+    "build": "npm install && echo 'Build complete'"
   },
   "author": "",
   "license": "ISC",
