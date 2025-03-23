@@ -8,7 +8,7 @@ const app = express()
 
 app.use(express.json())
 app.use(express.static(path.join(__dirname, "js")));
-
+app.use(express.static(__dirname, "/public"));
 
 
 app.post('/weather', (req, res) => {
