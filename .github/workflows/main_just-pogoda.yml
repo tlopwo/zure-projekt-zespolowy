@@ -55,7 +55,7 @@ jobs:
         run: unzip release.zip
 
       - name: Wait for a minute
-        run: sleep 60
+        run: sleep 10
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp

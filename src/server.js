@@ -21,7 +21,7 @@ app.post('/weather', (req, res) => {
 
 // Domyślna trasa GET dla "/"
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/public/index.html');
+    res.sendFile(__dirname.trimEnd(2) + '/public/index.html');
 });
 
 app.listen(8080, '0.0.0.0', () => {
