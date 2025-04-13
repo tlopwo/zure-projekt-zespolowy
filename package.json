@@ -5,8 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node public/src/server.js",
-    "devStart": "nodemon public/src/server.js",
-    "postinstall": "npm install"
+    "devStart": "nodemon public/src/server.js"
   },
   "author": "",
   "license": "ISC",
